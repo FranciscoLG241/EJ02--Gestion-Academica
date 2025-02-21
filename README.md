@@ -1,20 +1,19 @@
-# Ejercicio 7: Sistema de Vehículos¶
-- Descripción: Crea una jerarquía de clases para representar diferentes tipos de vehículos. Cada vehículo tiene características comunes como la marca, el modelo y la capacidad de combustible, pero cada tipo tiene sus propias características y comportamientos.
+# Ejercicio 9: Sistema de Gestión Académica¶
+- Descripción: Crea una jerarquía de clases para representar distintos roles en un entorno académico, como estudiantes y profesores.
 
 ## Clases a implementar:
 
-### Clase Base Vehiculo
-- Propiedades comunes: marca (String), modelo (String), capacidadCombustible (Int).
-- Método mostrarInformacion(), que imprime la información del vehículo.
-- Método calcularAutonomia(), que retorna un valor Int (Suponemos que cada litro da para 10 km).
+### Clase Base Persona
+- Propiedades comunes: nombre (String), edad (Int), id (String).
+- Método mostrarRol(), que imprime el rol de la persona (Estudiante, Profesor, etc.).
 
-### Clase Derivada Automovil (hereda de Vehiculo)
+### Clase Derivada Estudiante
 
-- Propiedad específica: tipo (String), como "sedán", "SUV", "deportivo", etc.
-- Implementa el método calcularAutonomia() (Suponemos que un automóvil puede hacer 100km más que el cálculo realizado en su clase base)
+- Propiedades específicas: curso (String), calificacionPromedio (Double).
+- Implementa el método mostrarRol() y añade un método mostrarCalificacion() para imprimir la calificación promedio.
 
-### Clase Derivada Motocicleta (hereda de Vehiculo)
+### Clase Derivada Profesor
 
-- Propiedad específica: cilindrada (Int).
-- Implementa el método calcularAutonomia() (Suponemos que una moto puede hacer 40km menos que el cálculo realizado en su clase base)
-- Objetivo: Demostrar cómo se pueden crear clases derivadas de una superclase y cómo pueden extender o modificar su comportamiento.
+- Propiedades específicas: departamento (String), aniosExperiencia (Int).
+- Implementa el método mostrarRol() y añade un método mostrarExperiencia() para imprimir los años de experiencia.
+- Objetivo: Familiarizarse con la herencia y cómo las clases derivadas pueden tener propiedades y métodos adicionales, así como comportamientos específicos.
